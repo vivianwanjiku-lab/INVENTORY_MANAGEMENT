@@ -166,14 +166,6 @@ git push origin feature/new-feature
 - Pytest - Testing framework
 - OpenFoodFacts API - Product data source
 
-## Scoring Rubric (100/100 points)
-
-- **Flask Routing** (20/20): CRUD routes + helper routes
-- **CRUD Operations** (20/20): Full GET, POST, PATCH, DELETE
-- **External API** (20/20): OpenFoodFacts integration with UI
-- **Git Management** (20/20): Branches, pull requests, cleanup
-- **Testing** (20/20): Comprehensive test suite
-
 ## License
 
 Educational project
