@@ -85,7 +85,7 @@ def create_product():
     Create a new inventory item
     """
     try:
-        data = request.get_json()
+        data = request.get_json(silent=True)
         
         if not data:
             return jsonify({
@@ -127,7 +127,7 @@ def update_product_endpoint(product_id):
     Update an existing product
     """
     try:
-        data = request.get_json()
+        data = request.get_json(silent=True)
         
         if not data:
             return jsonify({
@@ -330,7 +330,7 @@ def add_from_external_api():
     Fetch product from OpenFoodFacts and add to inventory
     """
     try:
-        data = request.get_json()
+        data = request.get_json(silent=True)
         
         if not data or "barcode" not in data:
             return jsonify({
